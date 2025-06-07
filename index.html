@@ -8,10 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Warm Neutrals -->
-    <!-- Application Structure Plan: The application uses a tab-based navigation to switch between five bingo cards. This is a user-friendly approach for presenting a fixed number of distinct views. The main view is a single-column layout, interactively displaying the selected 5x5 bingo grid. This simplified structure, removing the analysis chart, focuses purely on the interactive bingo game, making it ideal for mobile use. Users can click on squares to mark them, providing immediate visual feedback, and a confetti animation celebrates each marked item, enhancing engagement. This interactive game design was chosen to transform the static bingo report into an engaging, explorable experience focused on gameplay. -->
-    <!-- Visualization & Content Choices: The core content (bingo items) is organized into interactive grids. Goal: Play. Method: HTML/CSS grid with JS for interaction. Interaction: Clicking a square toggles its 'completed' state (color change) and triggers a confetti animation. Justification: This directly simulates playing bingo and adds a celebratory element. Tooltips on hover provide the difficulty of each item (though now a secondary feature due to chart removal). Goal: Inform. Method: JS-driven tooltips. Justification: Provides quick, non-intrusive access to item details. The names are randomly assigned to cards for personalization. -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -19,24 +15,25 @@
         }
         .bingo-grid-cell {
             transition: background-color 0.3s, color 0.3s;
-            min-height: 100px; /* Adjusted for smaller screens */
+            min-height: 80px; /* Adjusted for smaller screens (mobile portrait) */
             word-break: break-word; /* Ensure long text breaks */
             overflow-wrap: break-word; /* For older browsers */
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0.5rem; /* Adjusted padding */
-            font-size: 0.875rem; /* text-sm */
+            padding: 0.3rem; /* Adjusted padding for smaller screens */
+            font-size: 0.75rem; /* text-xs for mobile portrait */
         }
         @media (min-width: 640px) { /* sm breakpoint */
             .bingo-grid-cell {
-                min-height: 120px;
-                font-size: 1rem; /* text-base */
+                min-height: 100px; /* Slightly larger for small tablets/landscape phones */
+                font-size: 0.875rem; /* text-sm */
             }
         }
         @media (min-width: 1024px) { /* lg breakpoint */
             .bingo-grid-cell {
-                height: 140px; /* Original height for larger screens */
+                min-height: 120px; /* Original height for larger screens */
+                font-size: 1rem; /* text-base */
             }
         }
         .bingo-grid-cell.marked {
@@ -91,8 +88,7 @@
                 <div id="bingo-card-container">
                     <h2 id="card-title" class="text-2xl font-bold text-center mb-4 text-stone-800"></h2>
                     <div id="bingo-grid" class="grid grid-cols-5 gap-2">
-                        <!-- Bingo cells will be dynamically inserted here -->
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -244,4 +240,3 @@
     </script>
 </body>
 </html>
-
