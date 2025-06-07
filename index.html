@@ -100,6 +100,7 @@
 
     <script>
         const bingoData = {
+            // Keeping existing items and their difficulties as per instruction not to use "Bingo Repository.csv"
             items: {
                 "Someone catches a group of cousins smoking weed": "Medium", "Physical violence (adults)": "Hard", "Cops arrive": "Hard", "Kid gets in the fountain": "Medium",
                 "Influencer in the wild": "Medium", "Lynn insults someone": "Easy", "Someone gets so drunk they get asked to leave": "Medium", "Ambulance or medical emergency Addison solves": "Hard",
@@ -112,40 +113,40 @@
                 "A relative offers unsolicited (and likely unhelpful) life advice": "Medium", "Addison solves": "Hard"
             },
             cards: [
-                [
-                    "Unwelcome DJ", "Someone falls over", "Black Jacuzzi", "Someone asks for money", "Addison and Emma bust a move",
-                    "People start talking crypto", "Lynn talks about Peregrin money", "Lynn insults someone", "Someone brings a live animal (non-human)", "Addison solves",
-                    "Physical violence (adults)", "Addison and Emma bust a move", "FREE SPACE", "Someone gets so drunk they get asked to leave", "Awkward divorce comment",
-                    "Addison and Emma bust a move", "MAGA gear", "Bee sting / allergy attack", "Someone catches a group of cousins smoking weed", "Someone's mentions getting laid off",
-                    "Awkward toast", "Someone falls asleep", "Fred Cline says fuck", "Addison and Emma bust a move", "Someone brings a live animal (non-human)"
+                [ // Card 1
+                    "A relative offers unsolicited (and likely unhelpful) life advice", "Someone brings a live animal (non-human)", "Someone catches a group of cousins smoking weed", "Someone falls asleep", "Someone's mentions getting laid off",
+                    "Cops arrive", "Someone wears a mask", "Physical violence (adults)", "Bee sting / allergy attack", "Unwelcome DJ",
+                    "Someone asks for money", "Awkward toast", "FREE SPACE", "Ambulance or medical emergency Addison solves", "MAGA gear",
+                    "Jennifer gets drunk", "Black Jacuzzi", "Unexepected or unwelcome speech", "Remo asks \"what do you know?\"", "Addison solves",
+                    "Makeout", "Kid gets in the fountain", "Influencer in the wild", "Slutty outfit (verified by one other player)", "Visible Asian lettering tattoo"
                 ],
-                [
-                    "Addison and Emma bust a move", "Mom gets mad about marijuana", "Someone gets so drunk they get asked to leave", "Addison and Emma bust a move", "Addison and Emma bust a move",
-                    "Awkward toast", "Someone brings a live animal (non-human)", "Someone catches a group of cousins smoking weed", "Someone gets so drunk they get asked to leave", "Someone's mentions getting laid off",
-                    "Broken Glass", "Jennifer gets drunk", "FREE SPACE", "Addison and Emma bust a move", "Black Jacuzzi",
-                    "Mom get mad at Dad for drinking", "Lynn talks about Peregrin money", "Bee sting / allergy attack", "Conspiracy theory told seriously", "Slutty outfit (verified by one other player)",
-                    "Someone falls over", "Physical violence (adults)", "Addison and Emma bust a move", "Kid gets in the fountain", "Addison and Emma bust a move"
+                [ // Card 2
+                    "Lynn insults someone", "Someone falls over", "Mom gets mad about marijuana", "Mom get mad at Dad for drinking", "Fred Cline says fuck",
+                    "Conspiracy theory told seriously", "Awkward use of foul language", "An LGBTQIA+?", "Broken Glass", "Awkward divorce comment",
+                    "Dan P calls someone an idiot to their face", "Lynn talks about Peregrin money", "FREE SPACE", "People start talking crypto", "Meg tells the hate f**k store",
+                    "Addison and Emma bust a move", "Someone gets so drunk they get asked to leave", "Someone catches a group of cousins smoking weed", "A relative offers unsolicited (and likely unhelpful) life advice", "Someone brings a live animal (non-human)",
+                    "Someone falls asleep", "Someone wears a mask", "Physical violence (adults)", "Bee sting / allergy attack", "Unwelcome DJ"
                 ],
-                [
-                    "Someone gets so drunk they get asked to leave", "Conspiracy theory told seriously", "Addison and Emma bust a move", "MAGA gear", "Addison and Emma bust a move",
-                    "Addison and Emma bust a move", "An LGBTQIA+?", "Someone's mentions getting laid off", "Bee sting / allergy attack", "Awkward divorce comment",
-                    "Someone falls over", "Physical violence (adults)", "FREE SPACE", "Addison and Emma bust a move", "Slutty outfit (verified by one other player)",
-                    "Mom gets mad about marijuana", "Lynn talks about Peregrin money", "Kid gets in the fountain", "Unexepected or unwelcome speech", "Makeout",
-                    "Addison and Emma bust a move", "Someone brings a live animal (non-human)", "Addison and Emma bust a move", "Someone falls asleep", "Broken Glass"
+                [ // Card 3
+                    "Someone asks for money", "Awkward toast", "Ambulance or medical emergency Addison solves", "MAGA gear", "Jennifer gets drunk",
+                    "Black Jacuzzi", "Unexepected or unwelcome speech", "Remo asks \"what do you know?\"", "Addison solves", "Makeout",
+                    "Kid gets in the fountain", "Influencer in the wild", "FREE SPACE", "Slutty outfit (verified by one other player)", "Visible Asian lettering tattoo",
+                    "Lynn insults someone", "Someone falls over", "Mom gets mad about marijuana", "Mom get mad at Dad for drinking", "Fred Cline says fuck",
+                    "Conspiracy theory told seriously", "Awkward use of foul language", "An LGBTQIA+?", "Broken Glass", "Awkward divorce comment"
                 ],
-                [
-                    "Someone brings a live animal (non-human)", "Someone gets so drunk they get asked to leave", "Addison and Emma bust a move", "Conspiracy theory told seriously", "Addison and Emma bust a move",
-                    "Addison and Emma bust a move", "Slutty outfit (verified by one other player)", "Unexepected or unwelcome speech", "Addison and Emma bust a move", "Addison and Emma bust a move",
-                    "Awkward toast", "Someone gets so drunk they get asked to leave", "FREE SPACE", "Lynn talks about Peregrin money", "Fred Cline says fuck",
-                    "Someone falls over", "Awkward use of foul language", "Bee sting / allergy attack", "Addison and Emma bust a move", "Mom gets mad about marijuana",
-                    "Black Jacuzzi", "Kid gets in the fountain", "Someone's mentions getting laid off", "An LGBTQIA+?", "Addison and Emma bust a move"
+                [ // Card 4
+                    "Dan P calls someone an idiot to their face", "Lynn talks about Peregrin money", "People start talking crypto", "Meg tells the hate f**k store", "Addison and Emma bust a move",
+                    "Someone gets so drunk they get asked to leave", "Someone catches a group of cousins smoking weed", "A relative offers unsolicited (and likely unhelpful) life advice", "Someone brings a live animal (non-human)", "Someone falls asleep",
+                    "Someone wears a mask", "Physical violence (adults)", "FREE SPACE", "Bee sting / allergy attack", "Unwelcome DJ",
+                    "Someone asks for money", "Awkward toast", "Ambulance or medical emergency Addison solves", "MAGA gear", "Jennifer gets drunk",
+                    "Black Jacuzzi", "Unexepected or unwelcome speech", "Remo asks \"what do you know?\"", "Addison solves", "Makeout"
                 ],
-                [
-                    "Addison and Emma bust a move", "Someone gets so drunk they get asked to leave", "Someone falls over", "Addison and Emma bust a move", "Unwelcome DJ",
-                    "Someone's mentions getting laid off", "Slutty outfit (verified by one other player)", "Fred Cline says fuck", "A relative offers unsolicited (and likely unhelpful) life advice", "Someone brings a live animal (non-human)",
-                    "Lynn insults someone", "Addison and Emma bust a move", "FREE SPACE", "Mom get mad at Dad for drinking", "Unexepected or unwelcome speech",
-                    "Addison and Emma bust a move", "Mom gets mad about marijuana", "Someone falls asleep", "Someone gets so drunk they get asked to leave", "Addison and Emma bust a move",
-                    "Lynn talks about Peregrin money", "Someone catches a group of cousins smoking weed", "Addison and Emma bust a move", "Kid gets in the fountain", "Physical violence (adults)"
+                [ // Card 5
+                    "Kid gets in the fountain", "Influencer in the wild", "Slutty outfit (verified by one other player)", "Visible Asian lettering tattoo", "Lynn insults someone",
+                    "Someone falls over", "Mom gets mad about marijuana", "Mom get mad at Dad for drinking", "Fred Cline says fuck", "Conspiracy theory told seriously",
+                    "Awkward use of foul language", "An LGBTQIA+?", "FREE SPACE", "Broken Glass", "Awkward divorce comment",
+                    "Dan P calls someone an idiot to their face", "Lynn talks about Peregrin money", "People start talking crypto", "Meg tells the hate f**k store", "Addison and Emma bust a move",
+                    "Someone gets so drunk they get asked to leave", "Someone catches a group of cousins smoking weed", "A relative offers unsolicited (and likely unhelpful) life advice", "Someone brings a live animal (non-human)", "Someone falls asleep"
                 ]
             ]
         };
